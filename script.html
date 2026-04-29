@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>script submitted data</h2>
+        <p id="n"></p>
+        <p id="e"></p>
+        <p id="p"></p>
+        <p id="a"></p>
+        <p id="d"></p>
+        <p id="g"></p>
+        <p id="l"></p>
+        <p id="t"></p>
+        <script>
+            document.getElementById("n").innerHTML=
+            "Name:"+ localStorage.getItem("name");
+
+            document.getElementById("e").innerHTML=
+            "Email:"+localStorage.getItem("email");
+
+            document.getElementById("p").innerHTML=
+            "password:"+localStorage.getItem("password");
+
+            document.getElementById("a").innerHTML=
+            "age:"+localStorage.getItem("age");
+
+            document.getElementById("d").innerHTML=
+            "date:"+localStorage.getItem("date");
+
+            document.getElementById("g").innerHTML=
+            "gender:"+localStorage.getItem("gender");
+
+            document.getElementById("l").innerHTML=
+            "subjects:"+localStorage.getItem("subjects");
+
+            document.getElementById("t").innerHTML=
+            "phone:"+localStorage.getItem("phone");
+
+
+
+
+
+        </script>
+    </body>
+</html>
