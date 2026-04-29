@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>rgistration form</title>
+    
+    <style >
+        body{
+            background-color: antiquewhite;
+            font-family: Arial;
+        }
+        .box{
+            background-image:url(red_rose.jpg);
+            width:400px;
+            margin: 50px auto;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0px 0px 10px gray;
+            
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+            color: brown;
+        }
+        input{
+            width: 100px;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            border-radius: 5px;
+            border: 1px solid grey;
+
+        }
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+            width: 30%;
+            background: #351ba7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background: green;
+        }
+        
+
+        
+    </style>
+    </head>
+    <body>
+        <div class="box">
+        <form action="script.html" onsubmit="saveData()">
+            <h1>Registration Form</h1>
+            Name<br>
+            <input type="text" id="name"><br>
+            Email(.com only)<br>
+            <input type="email" id="email" ><br>
+            Password<br>
+            <input type="text" id="password" minlength="6" maxlength="8"><br>
+            Age<br>
+            <input type="number" id="age" ><br>
+            Date<br>
+            <input type="date" id="dob" ><br>
+            Gender<br>
+            <input type="radio"  name="gender" value="Male">Male<br>
+            <input type="radio"  name="gender" value="Female">Female<br>
+            <input type="radio"  name="gender" value="Other" >Other<br>
+            subjects<br>
+            <input type="checkbox"  value="c++">c++<br>
+            <input type="checkbox"  value="Java">Java<br>
+            <input type="checkbox"  value="HTML">HTML<br>
+            Upload File<br>
+            <input type="file"><br>
+            Website<br>
+            <input type="url"><br>
+            Phone<br>
+            <input type="tel" id="phone"><br>
+            
+            
+            <button type="submit" >submit</button>
+        
+
+        </form>
+        </div>
+        <script src="formscript.js"> </script>
+     </body> 
+     </html>
